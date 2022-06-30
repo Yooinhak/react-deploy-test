@@ -1,0 +1,107 @@
+@import 'common.scss';
+
+.itemContainer {
+  @include box-display(flex, 90%, auto);
+  padding: 5%;
+  flex-direction: column;
+}
+
+.item {
+  @include box-display(flex, 96%, auto);
+  padding: 2%;
+  justify-content: space-between;
+  & + & {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
+
+.img {
+  @include box-display(flex, 12vh, 12vh);
+  background-color: gray;
+  margin-right: 3vh;
+}
+
+.itemBox {
+  @include box-display(flex, 100%, 12vh);
+}
+
+.itemInfo > div:first-child {
+  margin-bottom: 3vh;
+  font-weight: bold;
+}
+
+.fcBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: b {
+    margin: 5%;
+  }
+}
+
+.adjAmountFcBox {
+  display: flex;
+}
+
+.deleteItemFcBox {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  button {
+    background-color: white;
+    font-size: medium;
+    color: black;
+  }
+}
+
+.addItemBtn {
+  padding: 8%;
+  font-size: 1.8vh;
+  background-color: gray;
+  color: black;
+}
+
+.addBtnBox {
+  @include box-display(flex, 100%, auto, center, flex-end);
+  margin-top: 3vh;
+}
+
+.listText {
+  margin-bottom: 10%;
+}
+
+.totalContainer {
+  @include box-display(flex, 90%, auto);
+  flex-direction: column;
+  padding: 5%;
+}
+
+.totalPrice {
+  @include box-display(flex, 100%, auto, auto, flex-end);
+  margin-top: 5%;
+  font-size: 4vh;
+}
+
+.cartHoleContainer > .prefContainer {
+  @include box-display(flex, 90%, auto);
+  flex-direction: column;
+  padding: 5%;
+}
+
+.prefInfo {
+  width: 90%;
+  padding: 5%;
+  background-color: gray;
+  margin-top: 5%;
+}
+
+.prefItem {
+  margin-left: 3%;
+  margin-top: 2%;
+}
+
+.foodPrefBox {
+  & + & {
+    margin-top: 10%;
+  }
+}
